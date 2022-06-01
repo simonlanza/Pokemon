@@ -16,13 +16,13 @@ function App() {
 
     const handlerPokemon = (e) => {
         if(e === 1){
-            setState(<PFire elemento = {pokemonData.fire}/>);
+            setState(<PFire elemento = {pokemonData[e]}/>);
         } else if (e === 2){
-            setState(<PWater elemento = {pokemonData.water}/>);
+            setState(<PWater elemento = {pokemonData[e]}/>);
         } else if (e === 3){
-            setState(<PRock elemento = {pokemonData.rock}/>);
+            setState(<PRock elemento = {pokemonData[e]}/>);
         } else if (e === 4){
-            setState(<PElectric elemento = {pokemonData.electric}/>);
+            setState(<PElectric elemento = {pokemonData[e]}/>);
         }
     }
 
